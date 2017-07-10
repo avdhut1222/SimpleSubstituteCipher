@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css\index.css">
+		<script src="js\jquery-3.2.1.min.js"></script>
+		<script src="js\index.js"></script>
+		<title>Cipher Challenge</title>
+	</head>
+	<body>
+		<main class="main-content">
+			<h1>Cipher - Decipher</h1>
+			<form id="cipherForm" enctype="multipart/form-data">
+				<section class="form-section">
+					<div class="row">
+						<div class="col col-3">
+							<label for="encryptedFile" class="form-field">Select a file with text.</label>
+							<input type="file" id="encryptedFile" name="encryptedFile" class="form-field" required="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-3">
+							<label for="cipherKey" class="form-field">Enter the cipher key.</label>
+							<input type="text" id="cipherKey" name="cipherKey" class="form-field" value="zhimne" style="text-transform:lowercase" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-3">
+							<button type="button" id="decrypt">Decrypt the data</button>
+						</div>
+						<div class="col col-3">
+							<button type="button" id="encrypt">Encrypt the data</button>
+						</div>
+					</div>
+				</section>				
+			</form>
+			<section class="form-section">
+				<div class="row">
+					<div class="col col-12">
+						<label for="outputText" class="form-field">Output</label>
+						<textarea id="outputText" class="form-field textbox" rows="10"></textarea> 
+					</div>
+				</div>
+			</section>
+		<main>
+	</body>
+</html>
